@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Images/apple-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+    </div>
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1" style="border-right: 1px solid white;">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-snapchat"></i>
+                    <i class="fab fa-instagram"></i>
+
+                </div>
+
+                <div class="col-md-5" style="border-right:1px solid white ;">
+                    <p>Call for reservation: +011 29 345 678</p>
+                </div>
+
+                <div class="col-md-3" style="border-right:1px solid white ;">
+                    <p>Opening Hours : 9:00am - 10:00pm</p>
+                </div>
+                
+                <div class="col-md-1" style="border-right: 1px solid white;">
+                    <select name="language" id="" style="background-color:transparent ; border-color: transparent; color: white;">
+                        <option value="Eng" selected style="background-color: black ;">Eng</option>
+                        <option value="Esp" style="background-color: black ;">Esp</option>
+                        <option value="Chi" style="background-color: black ;">Chi</option>
+                        <option value="Rus" style="background-color: black ;">Rus</option>
+                        <option value="Ban" style="background-color: black ;">Ban</option>
+                    </select>
+                </div>
+
+                <div class="col-md-1" style="border-right: 1px solid white;">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#"><img src="Images/slice.png" alt=""></a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#reservation">Reservation</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#menu">Menu</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#service">Service</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#blog">Blogs</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#contact">Contact Us</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Pages</a>
+                              </li>
+                            </ul>
+                            <button style="padding: 5px; width: 150px; background-color: orange; color: white; border-color: transparent;">Reservation</button>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="booking">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                <h1 data-aos="fade-up"
+                data-aos-duration="1000">Welcome</h1>
+                <h2 class="display-4 fw-bold" data-aos="fade-up" data-aos-duration="2000">HIGH QUALITY MEALS</h2>
+                <p style="font-size: 30px;" data-aos="fade-up" data-aos-duration="3000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi voluptas iusto accusamus error dolore doloribus obcaecati eum?</p>
+                <input type="Submit" id="" value="BOOK A TABLE"  class="btn btn-outline-light">
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="chef" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mt-5">
+                    <h2 class="display-2 fw-bold" style="color: orange; font-family: 'Allura', cursive;">Discover</h2>
+                    <h3>OUR STORE</h3>
+                    <img src="Images/fork.PNG" alt="">
+                    <p class=" fs-3 mt-3 fs-5">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+                </div>
+
+                <div class="sweet col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="Images/rolls.PNG" alt="">
+                </div>
+
+                <div class="col-lg-4 text-center mt-5" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="Images/chef.PNG" alt="">
+                    <p class="fs-4">Russell Stephens <br> <span class="text-secondary"> Chief Cook </span></p>
+                </div>
+
+                <div class="turkey col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+                    <img src="Images/cook.PNG" alt="" height="65%">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="dinner" id="service">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="display-4 fw-bold"><span style="color: orange; font-family: 'Allura', cursive; font-size: 80px; font-weight: bold;"> Dininer </span> <br> EXPERIENCE</p>
+                    <p class="fs-3">Rica is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building,</p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 text-center mt-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="Images/omlet.jpeg" alt="" width="100%">
+                </div> 
+
+                <div class="col-lg-4 col-md-6 text-center mt-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="Images/kebeb.webp" alt="" width="100%">
+                </div>
+                
+                <div class="col-lg-4 col-md-6 text-center mt-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src=" Images/grn tea.PNG" alt="" width="100%">
+                </div> 
+
+                <div class="col-lg-4 col-md-6 text-center mt-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="Images/butter.jpeg" alt="" width="100%">
+                </div> 
+
+                <div class="col-lg-4 col-md-6 text-center mt-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="Images/cust.jpeg" alt="" width="100%">
+                </div>
+
+                <div class="col-lg-4 col-md-6 text-center mt-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <img src="Images/salas.jpeg" alt="" width="100%">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dishes" style="padding: 5%;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="display-4 fw-bold"><span style="color: orange; font-family: 'Allura', cursive; font-size: 80px;"> Discover </span> <br> POPULAR DISHES</p>
+                    <p class="fs-4">Rica is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building,</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu" id="menu">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/pom.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Trio Sausages         $130</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/wheat.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Cabernet Sauvignon    $150</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/cheese.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Delirium Tremens      $300</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/ghaas.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Super Burgers         $150</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/chickn.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Beef Steak            $250</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/straw.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Trio Sausages         $100</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/nut.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Cabernet Sauvignon    $150</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/beef.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Delirium Tremens      $300</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/york.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Super Burgers         $150</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/brger.jpg" alt="" width="100%">
+                    <pre class="fs-6 fw-bold">Beef Steak            $200</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/chicken.jpeg" alt="" width="100%" height="68.2%">
+                    <pre class="fs-6 fw-bold">Turkey roast          $250</pre>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <img src="Images/pasta.jpeg" alt="" width="100%" height="68.2%">
+                    <pre class="fs-6 fw-bold">Pasta                  $40</pre>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="lunch p-5" style="background: rgba(0, 0, 0, 0.3) url(Images/lunch.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="display-4 fw-bold" style="color: chocolate; font-family: 'Allura', cursive;">Discover</h2>
+                    <h3 class="display-4 fw-bold text-light">LUNCH SETS</h3>
+                    <p class="fs-4 mt-3 mb-5 text-light">Rica is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking</p>
+                </div>
+
+                <div class="col-md-4 text-start">
+                    <a href=""><pre>Chicken kebab grill           <span style="color: orange ;">$13.00</span> </pre></a>
+                    <pre class="fw-bold text-light">chicken breast, black pepper, garlic, onion, 
+green chillies, salt, vegetable oil</pre><br>
+                     
+                    <a href=""><pre>Spicy Skirt Stick             <span style="color: orange;">$15.50</span></pre></a>
+                    <pre class="fw-bold text-light">chicken breast, black pepper, garlic, onion, 
+green chillies, salt, vegetable oil</pre><br>
+
+                    <a href=""><pre>Pork Ribs                     <span style="color: orange;">$15.50</span></pre></a>
+                    <pre class="fw-bold text-light">chicken breast, black pepper, garlic, onion, 
+green chillies, salt, vegetable oil</pre><br>
+
+                    <a href=""><pre>Pork Chop with cheese         <span style="color: orange;">$15.50</span></pre></a>
+                    <pre class="fw-bold text-light">chicken breast, black pepper, garlic, onion, 
+green chillies, salt, vegetable oil</pre>
+                </div>
+
+                <div class="col-md-4 text-center mt-5" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img src="Images/lady.png" alt="">
+                </div>
+
+                <div class="col-md-4">
+                    <a href=""><pre>Chicken Wings                 <span style="color: orange ;">$13.00</span> </pre></a>
+                    <pre class="fw-bold text-light">chicken breast, black pepper, garlic, onion, 
+green chillies, salt, vegetable oil</pre><br>
+                     
+                    <a href=""><pre>Buffalo Drumsticks            <span style="color: orange;">$15.50</span></pre></a>
+                    <pre class="fw-bold text-light">chicken breast, black pepper, garlic, onion, 
+green chillies, salt, vegetable oil</pre><br>
+
+                    <a href=""><pre>Barbecued Catfish             <span style="color: orange;">$15.50</span></pre></a>
+                    <pre class="fw-bold text-light">chicken breast, black pepper, garlic, onion, 
+green chillies, salt, vegetable oil</pre><br>
+
+                    <a href=""><pre>Grilled Salmon                <span style="color: orange;">$15.50</span></pre></a>
+                    <pre class="fw-bold text-light">chicken breast, black pepper, garlic, onion, 
+green chillies, salt, vegetable oil</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel p-5" style="background-image: url(Images/grain.jpeg) ;color: white; background-size: cover; background-position: center;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <i class="fas fa-quote-left fs-1"></i>
+                    <p class="mt-4 fs-5">"We enjoy sharing the projects and posts we make just as much as we enjoy creating them,consectetur adipiscing elit, sed do euismod tempor incididunt Sit back & take a moment to browse through some of our recent completed work."</p>
+                    <cite class="fs-5" style="color: orange;">- Stevan Smith</cite>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="display-5 fw-bold">Blog</h2>
+                    <p class="fs-5">Rica is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="brand p-5" id="blog">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img src="Images/pastacook.jpg" alt="" width="100%">
+                </div>
+
+                <div class="col-md-3">
+                    <cite class="lead">Lookbook seasonal</cite>
+                    <h3>Brooklyn</h3>
+                    <p style="color: #7f8fa6;" class="fs-3 fw-bold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p><br><br>
+
+                    <a href="#"s>READ MORE</a>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img src="Images/wheat-1.jpg" alt="" width="100%">
+                </div>
+
+                <div class="col-md-3">
+                    <cite class="lead">Brading design</cite>
+                    <h3>Leeds Juicery</h3>
+                    <p style="color: #7f8fa6;" class="fs-3 fw-bold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p><br><br>
+
+                    <a href="#">READ MORE</a>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="col-md-3">
+                    <cite class="lead">Photography</cite>
+                    <h3>Leeds Juicery</h3>
+                    <p style="color: #7f8fa6;" class="fs-3 fw-bold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p><br><br>
+
+                    <a href="#">READ MORE</a>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img src="Images/veggies.jpg" alt="" width="100%">
+                </div>
+
+                <div class="col-md-3">
+                    <cite class="lead">Motion Graphic</cite>
+                    <h3>Leeds Juicery</h3>
+                    <p style="color: #7f8fa6;" class="fs-3 fw-bold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p><br><br>
+
+                    <a href="#">READ MORE</a>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+
+                <div class="col-md-3" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img src="Images/pot.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table p-5" id="reservation" style="background: rgba(0,0,0,0.2) url(Images/back.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <cite style="color: orange; font-family: 'Allura', cursive;"><h2 style="font-size: 40px; font-weight: bold;">Relaxing Atmosphere</h2></cite>
+                    <h3 class="text-secondary">Book your table</h3>
+                </div>
+
+                <div class="col-md-4 text-center mt-3">
+                    <input type="text" id="" placeholder="Your Name*" style="color: white;">
+                </div>
+
+                <div class="col-md-4 text-center mt-3">
+                    <input type="text" id="" placeholder="Your Email*" style="color: white;">
+                </div>
+
+                <div class="col-md-4 text-center mt-3">
+                    <input type="text" id="" placeholder="Mobile Number*" style="color: white;">
+                </div>
+
+                <div class="col-md-4 text-center mt-3">
+                    <input type="text" id="" placeholder="Date*" style="color: white;">
+                </div>
+
+                <div class="col-md-4 text-center mt-3">
+                    <input type="text" id="" placeholder="Time*" style="color: white;">
+                </div>
+
+                <div class="col-md-4 text-center mt-3">
+                    <input type="text" id="" placeholder="No. of Person*" style="color: white;">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer p-5" id="contact" style="background-image: url(Images/blksoil.jpeg); color: white; margin-top: -16px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <img src="Images/slice.png" alt="" class="mb-3">
+                    <p>Ut enim ad minim veniam, quis nostrud at exercitation ullamco laboris nisi nemo sit enim ipsam voluptatem quia voluptas</p>
+                    <a href="" style="color: white;"><i class="fab fa-facebook fs-4"></i></a>
+                    <a href="" style="color: white;"><i class="fab fa-twitter fs-4"></i></a>
+                    <a href="" style="color: white;"><i class="fab fa-google-plus fs-4"></i></a>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="mb-3">WORK TIME</h5>
+                    <pre>Monday-Friday:09:00-23:00</pre>
+                    <pre>Saturday     :11:00-01:00</pre>
+                    <pre>Sunday       :12:00-23:00</pre>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <h5 class="mb-3">CONTACT US</h5>
+                    <p>150 Duffy Ave, Hicksville, NY 11801, USA</p>
+                    <p>+38 056 23 15 7851</p>
+                    <p>Slice.info@mail.com</p>
+                </div>
+
+                <div class="col-lg-3 col-md-12">
+                    <h5>SUBSCRIBE TO OUR NEWS</h5>
+                    <input type="email" id="" placeholder="Your Email">
+                    <input type="submit" name="" id="" value="Submit" style="margin-left: -10px;">
+                </div>
+
+                <div class="col-md-12 text-center mt-5">
+                    <p>© 2017All Rights Reserved. Development by <a href="#" style="text-decoration: none; color: orange;"> Slice Food</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        setTimeout(function(){
+          $('#loader-wrapper').fadeToggle();
+        }, 1500);
+      </script>
+
+      <!--data of aos-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
